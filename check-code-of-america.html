@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var zipOne = '12535-1536';
+    var zipTwo = '1235';
+    function zipCodeAmerica(zipCode) {
+        check = /^[0-9]{5}(?:-[0-9]{4})?$/;
+        if (check.test(zipCode)){
+            return true;
+        } return false;
+    }
+
+    console.log(zipCodeAmerica(zipOne));
+    console.log(zipCodeAmerica(zipTwo));
+</script>
+</body>
+</html>
